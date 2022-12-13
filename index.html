@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Napster is Back!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Napster 2.0 + Videos!</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Search your favorite music genre, song, or artist to find a playlist!</h2>
+            <div id="search-container">
+                <form id="search-form" class="is-flex is-justify-content-center">
+                    <input id="search-input" name="search-playlist" type="text">
+                    <button type="submit" class="button is-medium is outlined">Search</button>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="parent-div">
+            <div id = "modalBox" class="modal">
+                <div id="modalDiv" class="modal-content">
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+            <div>
+                <div id="container-playlists" class="is-flex-wrap-wrap">
+                    <div id="playlists">
+                    </div>
+                </div>
+                <div class="content">
+                    <div id="container-tracks">
+                        <ul id="tracks" data-list="false">
+                        </ul>
+                    </div>
+                    <div id="youtube" class="is-flex is-justify-content-center">
+                        <iframe id='youtube-player' src="" width="1024" height="680" frameborder="0" data-set="false"></iframe>
+                        <div id="control-button">
+                            <button id="on-play" class="button is-medium is outlined">Play</button>
+                            <button id="next-song" class="button is-medium is-outlined">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+
+            <img src="./assets/css/discspin.gif" alt="spiningcd gif">
+            You are the 1,128,784th person to this website
+            <img src="./assets/css/discspin.gif" alt="spiningcd gif">
+
+            
+        </footer>
+        <script src="./assets/js/script.js"></script>
+
+
+</body>
+
+</html>
